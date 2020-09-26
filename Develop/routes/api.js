@@ -29,7 +29,7 @@ router.put("/api/workouts/:id", ({ body, params }, res) => {
 
 router.get("/api/workouts", (req, res) => {
     Workout.find()
-        .then(dbworkout => {
+        .then(dbworkouts => {
             res.json(dbworkouts);
         })
         .catch(err => {
@@ -37,11 +37,11 @@ router.get("/api/workouts", (req, res) => {
         });
 });
 
-router.get("/api/workouts", (req, res) => {
+router.get("/api/workouts/range", (req, res) => {
     Workout.find({}).limit(7)
-        .then(dbworkout => {
-            console.log(dbworkout)
-            res.json(dbworkout);
+        .then(dbworkouts => {
+            console.log(dbworkouts)
+            res.json(dbworkouts);
         })
         .catch(err => {
             res.status(404).json(err);
