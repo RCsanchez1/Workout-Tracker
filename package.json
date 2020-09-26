@@ -1,0 +1,19 @@
+{
+  "name": "workout-tracker",
+  "version": "1.0.0",
+  "description": "app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RCsanchez1/Workout-Tracker.git"
+  },
+  "author": "Ruiz Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RCsanchez1/Workout-Tracker/issues"
+  },
+  "homepage": "https://github.com/RCsanchez1/Workout-Tracker#readme"
+}

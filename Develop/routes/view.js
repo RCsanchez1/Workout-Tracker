@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const path = require('path');
 
-// added router.get and paths for stats and exercise
+// added  paths for stats and exercise
 router.get('/exercise', (req, res) => {
     res.sendFile(path.join(__dirname, '..public/exercise.html'));
 });
